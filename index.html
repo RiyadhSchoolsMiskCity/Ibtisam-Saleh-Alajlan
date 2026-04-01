@@ -51,23 +51,23 @@ body {
   <!-- المحتوى الرئيسي -->
   <main class="w-full max-w-sm mx-auto text-white pb-40">
     <div class="text-center">
-      <img src="Dr.Tahani Aljafari.png" alt="Dr. Tahani Aljafari"
+      <img src="Image (1)" alt="Ibtisam Saleh Alajlan"
         class="w-28 h-28 rounded-full ring-4 ring-white object-cover mx-auto mt-6 relative z-10" />
-      <h1 class="mt-3 text-2xl font-semibold">Dr. Tahani Aljafari</h1>
+      <h1 class="mt-3 text-2xl font-semibold">Ibtisam Saleh Alajlan</h1>
       <h2 class="tracking-widest text-sm text-white mt-1">
         Director General at Riyadh Schools Misk City
       </h2>
     </div>
 
     <div class="mt-5 space-y-1 text-left text-base sm:text-lg leading-relaxed">
-      <a href="tel:+966507333868" class="flex items-center gap-1 py-2 px-2 rounded-lg hover:bg-white/5">
+      <a href="tel:+966555820554" class="flex items-center gap-1 py-2 px-2 rounded-lg hover:bg-white/5">
         <img src="Picture1.png" alt="Phone Icon" class="icon-img" style="height:20px;" />
-        <span class="font-medium">+966 50 733 3868</span>
+        <span class="font-medium">+966 55 582 0554</span>
       </a>
 
-      <a href="mailto:t.aljafari@RSMC.edu.sa" class="flex items-center gap-1 py-2 px-2 rounded-lg hover:bg-white/5">
+      <a href="mailto:i.alajlan@RSMC.edu.sa" class="flex items-center gap-1 py-2 px-2 rounded-lg hover:bg-white/5">
         <img src="Picture2.png" alt="Email Icon" class="icon-email" style="width:22px;" />
-        <span class="font-medium break-all">t.aljafari@RSMC.edu.sa</span>
+        <span class="font-medium break-all">i.alajlan@RSMC.edu.sa</span>
       </a>
 
       <a href="https://rsg.edu.sa/RSMiskCity/" target="_blank"
@@ -76,7 +76,7 @@ body {
   <span class="font-medium">RSMC Website</span>
 </a>
 
-      <a href="https://uk.linkedin.com/in/tahani-aljafari-phd-09422b269" target="_blank"
+      <a href="https://www.linkedin.com/in/ibtisam-al-ajlan-764493b4/" target="_blank"
          class="flex items-center gap-1 py-2 px-2 rounded-lg hover:bg-white/5">
         <img src="Picture4.png" alt="LinkedIn Icon" class="icon-img" style="height:20px;" />
         <span class="font-medium">LinkedIn</span>
@@ -96,12 +96,12 @@ body {
     document.getElementById('saveBtn').addEventListener('click', () => {
       const vcard = [
         'BEGIN:VCARD','VERSION:3.0',
-        'N:Aljafari;Tahani;;;','FN:Dr. Tahani Aljafari',
+        'N:Alajlan;Ibtisam;;;','FN:Ibtisam Alajlan',
         'TITLE:Director General','ORG:Riyadh Schools Misk City',
-        'TEL;TYPE=CELL,VOICE:+966507333868',
-        'EMAIL;TYPE=INTERNET:t.aljafari@RSMC.edu.sa',
+        'TEL;TYPE=CELL,VOICE:+966555820554',
+        'EMAIL;TYPE=INTERNET:i.alajlan@RSMC.edu.sa',
         'URL:https://rsg.edu.sa/RSMiskCity/',
-        'item1.URL:https://uk.linkedin.com/in/tahani-aljafari-phd-09422b269',
+        'item1.URL:https://www.linkedin.com/in/ibtisam-al-ajlan-764493b4/',
         'item1.X-ABLabel:LinkedIn','END:VCARD'
       ].join('\n');
 
@@ -109,7 +109,7 @@ body {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Dr_Tahani_Aljafari.vcf';
+      a.download = 'Ibtisam_Saleh_Alajlan.vcf';
       document.body.appendChild(a);
       a.click();
       setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1500);
